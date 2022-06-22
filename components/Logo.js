@@ -4,7 +4,8 @@ import React from 'react'
 const Logo = () => {
   return (
     <View>
-      <Text style={styles.TextLogo}>TNI</Text>
+      <Text style={styles.textLogo}>TNI</Text>
+      
     </View>
   )
 }
@@ -12,7 +13,7 @@ const Logo = () => {
 export default Logo
 
 const styles = StyleSheet.create({
-    TextLogo:{
+    textLogo:{
         color:"yellow",
         fontSize:60
     }
