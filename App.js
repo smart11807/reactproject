@@ -6,6 +6,7 @@ import LotsOfGreetings from "./components/LotsOfGreetings";
 import MyCustomTextWith from "./components/MyCustomTextWith";
 import Count from "./components/Count";
 import InputText from "./components/InputText";
+import UserNameandPassword from "./components/UserNameandPassword";
 
 const App = () => {
   return (
@@ -15,18 +16,10 @@ const App = () => {
       {/* <LotsOfGreetings /> */}
       {/* <MyCustomTextWith /> */}
       {/* <Count /> */}
-      <InputText />
+      {/* <InputText /> */}
+      <UserNameandPassword/>
     </view>
   );
 };
 
 export default App;
-
-/* const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignContent: "center",
-  },
-});
- */
