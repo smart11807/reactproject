@@ -2,14 +2,12 @@ import React from "react";
 import { SafeAreaView, Text, View } from "react-native";
 
 const MyCustom = (props) => {
-  return (
-    <View style={{ alignItems: "center", top: 50 }}>
-      <Text>
-        Your Frist Name is {props.firstname} and Last name is {props.secondname}{" "}
-      </Text>
-    </View>
-  );
-};
+    return (
+      <View style={{ alignItems: "center", top: 50 }}>
+        <Text>Your Frist Name is {props.firstname} and Last name is {props.secondname} </Text>
+      </View>
+    );
+  };
 
 const MyCustomTextWith = () => {
   return (
