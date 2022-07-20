@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Touchable } from "react-native";
 import React from "react";
 import Logo from "./components/Logo";
 import User from "./components/User";
@@ -7,7 +7,10 @@ import MyCustomTextWith from "./components/MyCustomTextWith";
 import Count from "./components/Count";
 import InputText from "./components/InputText";
 import UserNameandPassword from "./components/UserNameandPassword";
-
+import AlertComponents from "./components/AlertComponents";
+import ImageWithTextInput from "./components/ImageWithTextInput";
+import ButtonExample from "./components/ButtonExample";
+import Touchable_Example from "./components/Touchable_Example";
 const App = () => {
   return (
     <view>
@@ -18,7 +21,11 @@ const App = () => {
       {/* <Count /> */}
       {/* <InputText /> */}
       {/* <UserNameandPassword/>   */}
-      <UserNamePassword />
+      {/* <UserNamePassword /> */}
+      {/* <AlertComponents /> */}
+      {/* <ImageWithTextInput/> */}
+      {/* <ButtonExample/> */}
+      <Touchable_Example />
     </view>
   );
 };
