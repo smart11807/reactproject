@@ -17,7 +17,8 @@ const App = () => {
       {/* <MyCustomTextWith /> */}
       {/* <Count /> */}
       {/* <InputText /> */}
-      <UserNameandPassword/>
+      {/* <UserNameandPassword/>   */}
+      <UserNamePassword />
     </view>
   );
 };

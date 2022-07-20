@@ -1,33 +1,59 @@
-import { StyleSheet, Text, View } from "react-native";
-import React, { useState } from "react";
-import { TextInput } from "react-native-web";
+import { StyleSheet, Text, View,TextInput,Button } from 'react-native'
+import React,{useState} from 'react'
 
-const InputText = () => {
-  const [username, setusername] = useState("");
+const UserNameandPassWord = () => {
+    const [textInputName,settextInputName] = useState('');
+    const [email,setemail] = useState('');
+    
+    const checkTextInput = () => {
+        //Check for the Name TextInput
+        if (!textInputName.trim()) {
+            alert('Please Enter Name');
+            return;
+        }
+    //Check for the Email TextInput
+    if (!email.trim()) {
+        alert('Please Enter Email');
+        return;
+    }
+    //Checked Successfully
+    alert('Success')
+    //Do whatever you want  
+
+    }
   return (
-    <View style={{ flex: 1, marginTop: 20, alignItems: "center" }}>
-      <Text>Insert any text in below input</Text>
-      <TextInput 
-      style={styles.textInput}
-      value = {username}
-      onChangeText = {(username) => {setusername(username)}}
-      placeholder='Please input username'
-      
+    <View style={{flex:1,marginTop:20}}>
+      <TextInput
+        value={textInputName}
+       onChangeText={(textInputName)=>{settextInputName(textInputName)}}
+        style={styles.textinput}
+        placeholder='Enter Name'
       />
-      <text style = {{color:'green', fontSize:20}}>{username}</text>
+      <TextInput
+        value={email}
+       onChangeText={(email)=>{setemail(email)}}
+        style={styles.textinput}
+        placeholder='Enter Email'
+      />
+      <Button
+        color='#FFDEAD'
+        title='Submit'
+        onPress={checkTextInput}
+      />
     </View>
-  );
-};
+  )
+}
 
-export default InputText;
+export default UserNameandPassWord
 
 const styles = StyleSheet.create({
-    textInput:{
+    textinput:{
         width:250,
         height:45,
         padding:10,
         marginTop:20,
         marginBottom:10,
-        backgroundColor:'#eaeaea'
+        backgroundColor:'#FFFFE0'
     }
-});
+   
+})
