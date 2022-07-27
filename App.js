@@ -11,6 +11,7 @@ import AlertComponents from "./components/AlertComponents";
 import ImageWithTextInput from "./components/ImageWithTextInput";
 import ButtonExample from "./components/ButtonExample";
 import Touchable_Example from "./components/Touchable_Example";
+import TouchablePractice from "./TouchablePractice";
 const App = () => {
   return (
     <view>
@@ -25,7 +26,7 @@ const App = () => {
       {/* <AlertComponents /> */}
       {/* <ImageWithTextInput/> */}
       {/* <ButtonExample/> */}
-      <Touchable_Example />
+      <TouchablePractice/>
     </view>
   );
 };
