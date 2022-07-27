@@ -26,7 +26,9 @@ const App = () => {
       {/* <AlertComponents /> */}
       {/* <ImageWithTextInput/> */}
       {/* <ButtonExample/> */}
-      <TouchablePractice/>
+      {/* <Touchable_Example/> */}
+      {/* <DynamicStyle/> */}
+      <ModelExample/>
     </view>
   );
 };
