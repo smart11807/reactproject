@@ -1,40 +1,33 @@
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TouchableWithoutFeedback } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 
-
 const TouchablePractice = () => {
-
     return (
         <SafeAreaView style={{ flex: 1 }}>
-
             <View style={styles.container}>
 
+                <View>
+                    <TouchableOpacity style={styles.buttonFacebookStyle} activeOpacity={0.5}>
+                        <Image
+                            source={require('../assets/facebook.png')}
+                            style={styles.buttonImageIconStyle} />
+                        <View style={styles.buttonIconSeparatorStyle} />
+                        <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
+                    </TouchableOpacity>
+                </View>
 
-                <TouchableOpacity
-                    style={styles.buttonFacebookStyle}
-                >
 
-                    <Image
-                        source={require('../assets/facebook.png')}
-                        style={styles.buttonImageIconStyle}
-                    />
-                    <View style={styles.buttonIconSeparatorStyle} />
-                    <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={styles.buttonGPlusStyle}
-                >
-                    <Image
-                        source={require('../assets/google-plus.png')}
-                        style={styles.buttonImageIconStyle}
-                    />
-                    <View style={styles.buttonIconSeparatorStyle} />
-                    <Text style={styles.buttonTextStyle}>Login Using Google Plus</Text>
-                </TouchableOpacity>
-
+                <View>
+                    <TouchableOpacity style={styles.buttonGPlusStyle} activeOpacity={0.5}>
+                        <Image
+                            source={require('../assets/google-plus.png')}
+                            style={styles.buttonImageIconStyle} />
+                        <View style={styles.buttonIconSeparatorStyle} />
+                        <Text style={styles.buttonTextStyle}>Login Using Google Plus</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
-        </SafeAreaView>
+        </SafeAreaView >
     )
 }
 
@@ -50,7 +43,7 @@ const styles = StyleSheet.create({
     buttonGPlusStyle: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#dc4e43',
+        backgroundColor: '#dc4e41',
         borderWidth: 0.5,
         borderColor: '#fff',
         height: 40,
@@ -83,6 +76,5 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         width: 1,
         height: 40,
-        
     },
-});
+})
